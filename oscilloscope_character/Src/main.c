@@ -92,7 +92,7 @@ int main(void)
   MX_SPI2_Init();
     
   /* USER CODE BEGIN 2 */
-  uint8_t str_happy[]="happy";
+  uint8_t str_happy[]="yi happy";
   uint8_t str_birthday[]="birthday";
   HAL_GPIO_WritePin(GPIOC,2,GPIO_PIN_SET);
   display_init(dac_set_voltage);
@@ -106,7 +106,7 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-    display(str_happy,40,150,3);
+    display(str_happy,20,150,3);
     display(str_birthday,20,80,3);
   }
   /* USER CODE END 3 */

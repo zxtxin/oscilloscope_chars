@@ -5,6 +5,7 @@ static void display_char(uint8_t character,uint8_t x,uint8_t y,uint8_t scale)
 {
     uint8_t i;
     const char_model_t *ptr=get_char_model(character);
+    if(!ptr) return;
     const uint8_t (*coord)[2] = *ptr->coord;
     for(i=0;i<ptr->length;++i)
     {
